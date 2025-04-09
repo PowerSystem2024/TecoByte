@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="794cd299-ff7d-4873-ad17-16d01161bfb8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/CicloWhile/EjercicioWhile01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos01/Ciclos01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos01/Ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos02/Ciclos02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos02/Ejercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos03/Ciclos03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos03/Ejercicio03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos04/Ciclos04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos04/Ejercicio04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos05/Ciclos05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos05/Ejercicio05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos06/Ciclos06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos06/Ejercicio06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos07/Ciclos07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos07/Ejercicio07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos08/Ciclo08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos08/Ejercicio08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos09/Ciclos09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos09/Ejercicio09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos10/Ciclos10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion2/EjercicioCiclos10/Ejercicio10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion3/LeccionClasesObjetos/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion3/LeccionClasesObjetos/PruebaPersona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion3/PasoPorReferencia/PasoPorReferencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion4/Aritmetica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion4/PasoPorValor/PasoPorValor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion4/ProyectoCaja/Caja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion4/ProyectoCaja/PruebaCaja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Java/Java/Leccion4/PruebaAritmetica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Javascript/01-04-objetos.js/clase4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Javascript/01-04-objetos.js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Javascript/clase1ciclos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Javascript/clase2arreglos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Javascript/clase3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Aritmetica.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Cubo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion10/MiClase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion10/variablesDeClase.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion7/ClientesPersona.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion7/Persona.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion7/herencia.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion8/Vehicuo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion8/ejercicioHerencia.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/Color.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/Cuadrado.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/FiguraGeometrica.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/Rectangulo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/claseAbstracta.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/herenciaMultiple.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Leccion9/test_figura_geometrica.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Persona2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/PruebaPersona2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/Rectangulo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/clase1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/clase2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/clase3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/clase4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/clase5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/diagramaUml.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Python/persona.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/assets/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/components/NavBar.Vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/components/icons/IconCommunity.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/components/icons/IconDocumentation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/components/icons/IconEcosystem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/components/icons/IconSupport.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/components/icons/IconTooling.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/Portafolio-Vuejs/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FragueiroLuciana/Vue.js/instanciaVue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/Matriz_Ejercicio_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/Matriz_Ejercicio_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/Matriz_Ejercicio_5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/Test/TestArreglos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/Test/TestArreglosObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/Test/TestMatrices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion10/Matrices/domain/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/CicloWhile/EjercicioWhile01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos01/Ciclos01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos01/Ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos02/Ciclos02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos02/Ejercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos03/Ciclos03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos03/Ejercicio03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos04/Ciclos04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos04/Ejercicio04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos05/Ciclos05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos05/Ejercicio05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos06/Ciclos06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos06/Ejercicio06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos07/Ciclos07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos07/Ejercicio07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos08/Ciclo08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos08/Ejercicio08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos09/Ciclos09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos09/Ejercicio09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos10/Ciclos10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos10/Ejercicio10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos11/Ciclos11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion2/EjercicioCiclos12/Ciclos12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion3/LeccionClasesObjetos/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion3/LeccionClasesObjetos/PruebaPersona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion3/PasoPorReferencia/PasoPorReferencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion4/Aritmetica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion4/PasoPorValor/PasoPorValor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion4/ProyectoCaja/Caja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion4/ProyectoCaja/PruebaCaja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion4/PruebaAritmetica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion4/herencia.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion5/ContextoEstatico/domain/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion5/ContextoEstatico/test/PersonaPrueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion5/Dominio/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion5/Test/PersonaPrueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion5/herencia.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion6/Herencia/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion6/Herencia/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion6/Herencia/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion6/Herencia/Test/TestHerencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion7/Operaciones/Operaciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion7/Paquetes/Test/TestUtileria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion7/Paquetes/Utileria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion7/TestOperaciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion8/PalabraFinal/Domain/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion8/PalabraFinal/Domain/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion8/PalabraFinal/Test/TestFinal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion9/Arreglos/Arreglos_Ejercicio_1/Arreglos_Ejercicio_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion9/Arreglos/Arreglos_Ejercicio_2/Arreglos_Ejercicio_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion9/Arreglos/Arreglos_Ejercicio_3/Arreglos_Ejercicio_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion9/Arreglos/Test/TestArreglos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion9/Arreglos/Test/TestArreglosObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Java/Leccion9/Arreglos/domain/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/01-04-objetos.js/clase4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/01-04-objetos.js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion03/03-01-OperadoresJavascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion03/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion04/04-01-Ejercicios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion04/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion05/05-03-clases.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion05/diagrama.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Leccion05/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/Sintaxis Js y Java.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/TSLeccion07/Cliente.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/TSLeccion07/Empleado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/TSLeccion07/Persona.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/TSLeccion07/PruebaPersonas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/TSLeccion07/SistemaVentas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/clase1ciclos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/clase2arreglos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/clase3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/01-01-Holamundo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/MathJax.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/Tipo-de-Clases-de-JavaScript.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/adaptable_v2_1_1_2.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/combo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/combo(1)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/combo(2)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/combo(3)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/javascript(1).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/javascript(2).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/javascript(3).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/javascript.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/jquery-3.6.1.min.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/jquery-easing-min.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/jquery-flexslider-min.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/monologo(1).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/monologo(2).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/monologo(3).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/monologo(4).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/monologo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/pace-min.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/requirejs(1).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/requirejs(2).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/requirejs(3).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/requirejs(4).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/requirejs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/styles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/tickerme.js.descarga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/holamundo_files/utn_icon_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion02/02-01-ConcatenacionDeCadenas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion02/02-01-TiposDatos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Javascript/leccion02/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Aritmetica.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Cubo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion10/MiClase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion10/variablesDeClase.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion7/ClientesPersona.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion7/Persona.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion7/herencia.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion8/Vehicuo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion8/ejercicioHerencia.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/Color.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/Cuadrado.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/FiguraGeometrica.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/Rectangulo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/claseAbstracta.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/herenciaMultiple.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Leccion9/test_figura_geometrica.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Persona2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/PruebaPersona2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/Rectangulo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/clase1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/clase2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/clase3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/clase4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/clase5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/diagramaUml.uxf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Python/persona.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/assets/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/components/NavBar.Vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/components/icons/IconCommunity.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/components/icons/IconDocumentation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/components/icons/IconEcosystem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/components/icons/IconSupport.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/components/icons/IconTooling.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/Portafolio-Vuejs/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Segundo cuatrimestre/Vue.js/instanciaVue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../mi primer repositorio en git.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../web.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2vQN1ZY3AW5xzYRQ9E63FYha2M8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/lucha/ClaseSPD"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="794cd299-ff7d-4873-ad17-16d01161bfb8" name="Changes" comment="" />
+      <created>1744073124196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744073124196</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
