@@ -15,7 +15,7 @@ Aprender y practicar programación de manera colaborativa, desarrollando proyect
 - Ortiz Eduardo Javier  
 - Salinas Agustín  
 - Tomio Maximiliano David
-- 
+  
 ## 🛠️ Tecnologías que usamos
 
 - JavaScript
