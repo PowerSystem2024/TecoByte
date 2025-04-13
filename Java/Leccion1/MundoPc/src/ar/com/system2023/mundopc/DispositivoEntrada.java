@@ -1,4 +1,7 @@
 
+package ar.com.system2023.mundopc;
+
+
 public class DispositivoEntrada {
     private String tipoEntrada;
     private String marca;
@@ -26,7 +29,4 @@ public class DispositivoEntrada {
     public String toString() {
         return "DispositivoEntrada{ " + "tipoEntrada=" + tipoEntrada + ", marca=" + marca + '}';
     }
-    
-        
-
 }
