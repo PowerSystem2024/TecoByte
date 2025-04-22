@@ -6,7 +6,7 @@ class Empleado{
 
     obtenerDetalles(){
         return `Empleado: nombre: ${this._nombre},
-        Sueldo: ${this._sueldo}`
+        Sueldo: ${this._sueldo}`;
     }
 }
 
@@ -18,7 +18,23 @@ class Gerente extends Empleado{
 
     //Se agrega sobreescritura
     obtenerDetalles(){
-        return `Gerente: ${super.obtenerDetalles()} depto: ${this._departamento}`
+        return `Gerente: ${super.obtenerDetalles()} depto: ${this._departamento}`;
+    }
+}
+
+
+function imprimir(tipo) { // Recibe una variable
+    console.log(tipo.obtenerDetalles()); // Según el tipo que le pasemos, será la información
+    if ( tipo instanceof Gerente){
+        console.log('Es un objeto de tipo Gerente');
+        console.log( tipo._departamento); 
+    }
+    else if( tipo instanceof Empleado){
+        console.log('Es de tipo Empleado'); 
+        console.log( tipo._departamento );//No existe en la clase padre Undefined
+    }
+    else if( tipo instanceof Object){ //El orden siempre es jerarquico
+        console.log('Es de tipo Object'); //Clase padre de todas las clases
     }
 }
 
