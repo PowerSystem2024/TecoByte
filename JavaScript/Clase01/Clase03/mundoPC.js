@@ -68,7 +68,7 @@ class Monitor {
     }
 }
 
-// Step 4: Clase Computadora 
+// Clase Computadora 
 class Computadora {
     static contadorComputadoras = 0;
 
@@ -85,7 +85,7 @@ class Computadora {
     }
 }
 
-//  Step 5: Clase Orden 
+//  Clase Orden 
 class Orden {
     static contadorOrdenes = 0;
 
@@ -107,7 +107,7 @@ class Orden {
     }
 }
 
-//  Step 6: Crear objetos y demostrar polimorfismo 
+// Crear objetos y demostrar polimorfismo 
 
 // Objetos individuales
 let raton1 = new Raton("USB", "Logitech");
