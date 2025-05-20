@@ -1,5 +1,5 @@
 function nReinas(N) {
-    // Se crea un tablero N x N lleno de puntos sin reinas
+    // Creamos un tablero N x N lleno de puntos (sin reinas)
     const board = Array.from({ length: N }, () => Array(N).fill('.'));
 
     // Arreglo para guardar en qué posición se colocó cada reina
@@ -7,7 +7,7 @@ function nReinas(N) {
 
     // Función para verificar si una reina puede colocarse en esa posición
     function esSeguro(fila, columna) {
-        // Se verifica si hay una reina en la misma columna
+        // Verificar si hay una reina en la misma columna
         for (let i = 0; i < fila; i++) {
             if (board[i][columna] === 'R') return false;
         }
@@ -27,13 +27,13 @@ function nReinas(N) {
 
     // Función recursiva para colocar reinas fila por fila
     function colocarReinas(fila) {
-        // Si ya se coloco una reina en cada fila, la solución está completa
+        // Si ya colocamos una reina en cada fila, la solución está completa
         if (fila === N) return true;
 
-        // Se intenta poner una reina en cada columna de la fila actual
+        // Intentamos poner una reina en cada columna de la fila actual
         for (let columna = 0; columna < N; columna++) {
             if (esSeguro(fila, columna)) {
-                // Se coloca la reina
+                // Colocamos la reina
                 board[fila][columna] = 'R';
                 posiciones.push([fila, columna]);
 
@@ -42,17 +42,17 @@ function nReinas(N) {
                     return true; // Si se encuentra una solución, salimos
                 }
 
-                // Si no funcionó, se quita la reina
+                // Si no funcionó, quitamos la reina (backtracking)
                 board[fila][columna] = '.';
                 posiciones.pop();
             }
         }
 
-        // Si no se pudo colocar ninguna reina en esta fila, se devuelve falso
+        // Si no se pudo colocar ninguna reina en esta fila, devolvemos falso
         return false;
     }
 
-    // Se empieza desde la primera fila
+    // Empezamos desde la primera fila
     if (colocarReinas(0)) {
         console.log(`✅ Solución para N = ${N}`);
         console.log("📍 Posiciones de las reinas:");
@@ -69,5 +69,5 @@ function nReinas(N) {
     }
 }
 
-// Este número se puede cambiar para probar con otros tamaños
+// Cambiá este número si querés probar con otros tamaños
 nReinas(8);
