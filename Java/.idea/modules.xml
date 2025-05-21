@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Leccion2/ArgumentosVariables/ArgumentosVariables.iml" filepath="$PROJECT_DIR$/Leccion2/ArgumentosVariables/ArgumentosVariables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion2/BloquesInicializacion/BloquesInicializacion.iml" filepath="$PROJECT_DIR$/Leccion2/BloquesInicializacion/BloquesInicializacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion2/Enumeraciones/Enumeraciones.iml" filepath="$PROJECT_DIR$/Leccion2/Enumeraciones/Enumeraciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion4/InstanceOf/InstanceOf.iml" filepath="$PROJECT_DIR$/Leccion4/InstanceOf/InstanceOf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion1/Leccion1.iml" filepath="$PROJECT_DIR$/Leccion1/Leccion1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion3/Leccion3.iml" filepath="$PROJECT_DIR$/Leccion3/Leccion3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion5/Leccion5.iml" filepath="$PROJECT_DIR$/Leccion5/Leccion5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leccion4/Sobreescritura/Sobreescritura.iml" filepath="$PROJECT_DIR$/Leccion4/Sobreescritura/Sobreescritura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecoByte.iml" filepath="$PROJECT_DIR$/TecoByte.iml" />
+    </modules>
+  </component>
+</project>
