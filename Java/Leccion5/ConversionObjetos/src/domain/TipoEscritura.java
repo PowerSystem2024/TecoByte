@@ -1,18 +1,16 @@
 package domain;
 
 public enum TipoEscritura {
-    CLASICO("Escritura a mano"),
-    MODERNO("Escritura digital");
-
+    CLASICO ("Clasico"),
+    MODERNO ("Moderno");
     private final String descripcion;
 
-    //Constructor
-    TipoEscritura(String descripcion) {
+    private TipoEscritura(String descripcion){
         this.descripcion = descripcion;
     }
 
     //Metodo get
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescripcion(){
+        return this.descripcion;
     }
 }
