@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, Papel o Tijera</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #eee;
+      margin: 0;
+      padding: 2em;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
+    .opciones img {
+      width: 80px;
+      cursor: pointer;
+      margin: 0 15px;
+    }
+
+    .estadisticas {
+      margin-top: 1em;
+      font-size: 1.2em;
+    }
+
+    #resultado,
+    #mensaje-final {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+
+    .botones {
+      margin-top: 1em;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    #mensaje-final {
+      color: red;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Piedra, Papel o Tijera</h1>
+
+  <div class="opciones">
+    <img src="https://em-content.zobj.net/thumbs/240/apple/354/rock_1faa8.png" alt="Piedra" onclick="jugar('Piedra')"
+      class="opcion">
+    <img src="https://em-content.zobj.net/thumbs/240/apple/354/page-facing-up_1f4c4.png" alt="Papel"
+      onclick="jugar('Papel')" class="opcion">
+    <img src="https://em-content.zobj.net/thumbs/240/apple/354/scissors_2702-fe0f.png" alt="Tijera"
+      onclick="jugar('Tijera')" class="opcion">
+  </div>
+
+  <p id="instrucciones"><em>Seleccioná una opción para jugar.</em></p>
+
+  <p id="eleccion-jugador"></p>
+  <p id="eleccion-computadora"></p>
+  <p id="resultado"></p>
+
+  <div class="estadisticas">
+    🏆 Victorias: <span id="victorias">0</span> |
+    🤝 Empates: <span id="empates">0</span> |
+    😞 Derrotas: <span id="derrotas">0</span>
+  </div>
+
+  <p id="mensaje-final"></p>
+
+  <div class="botones">
+    <button onclick="finalizarPartida()">Finalizar partida</button>
+    <button onclick="reiniciarJuego()">Reiniciar juego</button>
+  </div>
+
+  <script>
+    let victorias = 0, empates = 0, derrotas = 0;
+    let juegoActivo = true;
+
+    function jugar(eleccionJugador) {
+      if (!juegoActivo) return;
+
+      const opciones = ['Piedra', 'Papel', 'Tijera'];
+      const emojis = {
+        Piedra: '🗿​',
+        Papel: '📄',
+        Tijera: '✂️'
+      };
+      const computadora = opciones[Math.floor(Math.random() * 3)];
+
+      document.getElementById('eleccion-jugador').textContent = `Elegiste: ${eleccionJugador} ${emojis[eleccionJugador]}`;
+      document.getElementById('eleccion-computadora').textContent = `La computadora eligió: ${computadora} ${emojis[computadora]}`;
+
+      let resultado = "";
+
+      if (eleccionJugador === computadora) {
+        resultado = "Empate 🤝";
+        empates++;
+      } else if (
+        (eleccionJugador === 'Piedra' && computadora === 'Tijera') ||
+        (eleccionJugador === 'Papel' && computadora === 'Piedra') ||
+        (eleccionJugador === 'Tijera' && computadora === 'Papel')
+      ) {
+        resultado = "¡Ganaste! 🏆";
+        victorias++;
+      } else {
+        resultado = "Perdiste 😞";
+        derrotas++;
+      }
+
+      document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+      actualizarEstadisticas();
+    }
+
+    function actualizarEstadisticas() {
+      document.getElementById('victorias').textContent = victorias;
+      document.getElementById('empates').textContent = empates;
+      document.getElementById('derrotas').textContent = derrotas;
+    }
+
+    function finalizarPartida() {
+      juegoActivo = false;
+      document.getElementById('mensaje-final').textContent = "Juego finalizado. ¡Gracias por jugar!";
+      document.getElementById('instrucciones').textContent = "Presioná 'Reiniciar juego' para volver a jugar.";
+      document.querySelectorAll(".opcion").forEach(boton => {
+        boton.disabled = true;
+      });
+    }
+
+    function reiniciarJuego() {
+      juegoActivo = true;
+      victorias = 0;
+      empates = 0;
+      derrotas = 0;
+
+      document.getElementById('resultado').textContent = "";
+      document.getElementById('eleccion-jugador').textContent = "";
+      document.getElementById('eleccion-computadora').textContent = "";
+      document.getElementById('mensaje-final').textContent = "";
+      document.getElementById('instrucciones').textContent = "Seleccioná una opción para jugar.";
+
+      document.querySelectorAll(".opcion").forEach(boton => {
+        boton.disabled = false;
+      });
+
+      actualizarEstadisticas();
+    }
+  </script>
+</body>
+
+</html>
