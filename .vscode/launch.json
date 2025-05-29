@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "TestExcepciones",
+            "request": "launch",
+            "mainClass": "TestExcepciones",
+            "projectName": "TecoByte_fcfb8b40"
+        },
+        {
+            "type": "java",
+            "name": "TestJavaBeans",
+            "request": "launch",
+            "mainClass": "test.TestJavaBeans",
+            "projectName": "TecoByte_fcfb8b40"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
