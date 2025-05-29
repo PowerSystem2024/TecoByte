@@ -4,8 +4,14 @@ const N = 8;
 
 // Se definen los ocho posibles movimientos del caballo
 const movimientos = [
-  [2, 1], [1, 2], [-1, 2], [-2, 1],
-  [-2, -1], [-1, -2], [1, -2], [2, -1]
+  [2, 1],
+  [1, 2],
+  [-1, 2],
+  [-2, 1],
+  [-2, -1],
+  [-1, -2],
+  [1, -2],
+  [2, -1],
 ];
 
 // Esta función crea una matriz de N x N inicializada con -1
@@ -17,19 +23,17 @@ function crearTablero() {
 // - Debe estar dentro de los límites del tablero
 // - Debe ser una casilla no visitada aún (valor -1)
 function esValido(x, y, tablero) {
-  return (
-    x >= 0 && x < N &&
-    y >= 0 && y < N &&
-    tablero[x][y] === -1
-  );
+  return x >= 0 && x < N && y >= 0 && y < N && tablero[x][y] === -1;
 }
 
 // Esta función imprime el tablero por consola
 // Cada número representa el orden en el que el caballo visitó esa casilla
 function imprimirTablero(tablero) {
-  console.log("\nRecorrido del caballo (cada número es el paso correspondiente):\n");
+  console.log(
+    "\nRecorrido del caballo (cada número es el paso correspondiente):\n"
+  );
   for (let fila of tablero) {
-    console.log(fila.map(n => (n < 10 ? "0" + n : n)).join(" "));
+    console.log(fila.map((n) => (n < 10 ? "0" + n : n)).join(" "));
   }
 }
 
