@@ -18,23 +18,27 @@ function seleccionarPersonajeJugador() {
   }
 }
 
+/**
+Selecciona aleatoriamente un personaje enemigo distinto al personaje seleccionado por el usuario.
+
+Busca todos los inputs de tipo radio con el nombre "personaje", excluye el que está seleccionado,
+
+elige uno al azar entre los restantes y actualiza el elemento con id "personaje-enemigo" con el id del personaje enemigo seleccionado.
+ */
 function seleccionarPersonajeEnemigo() {
-  let personajes = document.querySelectorAll('input[name="personaje"]');
   let seleccionado = document.querySelector('input[name="personaje"]:checked');
+  let personajes = document.querySelectorAll('input[name="personaje"]');
+
   let opciones = Array.from(personajes).filter(
     (p) => !seleccionado || p.id !== seleccionado.id
   );
 
   let enemigo = opciones[Math.floor(Math.random() * opciones.length)];
   let spanPersonajeEnemigo = document.getElementById("personaje-enemigo");
-  if (spanPersonajeEnemigo) spanPersonajeEnemigo.innerHTML = enemigo.id;
+
+  if (spanPersonajeEnemigo) {
+    spanPersonajeEnemigo.innerHTML = enemigo.id;
+  }
 }
 
 window.addEventListener("load", iniciarJuego);
-
-/*if (seleccionado) {
-    alert("Has seleccionado a: " + seleccionado.id);
-  } else {
-    alert("No has seleccionado ningún personaje");
-  }
-    */
