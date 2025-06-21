@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalculadoraUTN",
+            "request": "launch",
+            "mainClass": "CalculadoraUTN",
+            "projectName": "TecoByte_fcfb8b40"
+        },
+        {
+            "type": "java",
+            "name": "ListadoPersonasApp",
+            "request": "launch",
+            "mainClass": "ListadoPersonasApp",
+            "projectName": "TecoByte_fcfb8b40"
+        },
+        {
+            "type": "java",
             "name": "TestExcepciones",
             "request": "launch",
             "mainClass": "TestExcepciones",
