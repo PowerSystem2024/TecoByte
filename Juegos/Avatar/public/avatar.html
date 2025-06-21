@@ -32,15 +32,15 @@
 
       <p>
         Tu personaje <span id="personaje-jugador"></span> tiene
-        <span>3</span> vidas
+        <span id="vida-jugador">3</span> vidas
       </p>
       <!-- Pero esto debe ser dinamico, necesitamos que cambie-->
 
       <p>
-        El personaje <span id="personaje-enemigo"></span> del enemigo tienen
-        <span>3</span> vidas
+        El personaje <span id="personaje-enemigo"></span> del enemigo tiene
+        <span id="vida-enemigo">3</span> vidas
       </p>
-      <!--Con la etiqueta spam vamos a modificar el 3 con -->
+      <!--Con la etiqueta span vamos a modificar el 3 con -->
 
       <p>
         <button id="boton-trompada">Trompada 👊</button>
@@ -48,13 +48,24 @@
         <button id="boton-barrida">Barrida 🦶</button>
       </p>
     </section>
-
+    <section id="reglas-juego">
+      <h2>Reglas del Juego</h2>
+      <ul>
+        <li><b>Patada</b> vence a <b>Trompada</b></li>
+        <li><b>Barrida</b> vence a <b>Patada</b></li>
+        <li><b>Trompada</b> vence a <b>Barrida</b></li>
+        <li>
+          Si ambos eligen el mismo ataque, es <b>empate</b> y nadie pierde vida.
+        </li>
+        <li>Ganas la partida si el enemigo llega a 0 vidas antes que tú.</li>
+        <li>
+          Pierdes la partida si tus vidas llegan a 0 antes que el enemigo.
+        </li>
+      </ul>
+    </section>
     <section id="mensaje">
+      <h2>Historial de batallas</h2>
       <!--sera un parrafo dinamico-->
-      <p>
-        Tu personaje ataco con todo el poder del FUEGO, el personaje del enemigo
-        atacó con el medio poder de la TIERRA - GANASTE 🎉
-      </p>
     </section>
     <section id="reiniciar">
       <button id="boton-reiniciar">Reiniciar</button>

@@ -1,5 +1,7 @@
 let ataqueJugador;
 let ataqueEnemigo;
+let vidaJugador = 3;
+let vidaEnemigo = 3;
 
 //Creamos una funcion que se ejecuta al cargar la pagina, en este caso lo que hace es agregar un evento al boton de seleccionar personaje
 function iniciarJuego() {
@@ -23,6 +25,11 @@ function seleccionarPersonajeJugador() {
   if (seleccionado) {
     spanPersonajeJugador.innerHTML = seleccionado.id;
     seleccionarPersonajeEnemigo();
+    vidaJugador = 3;
+    vidaEnemigo = 3;
+    actualizarVidas();
+    habilitarBotonesAtaque();
+    limpiarMensajes();
   } else {
     alert("No has seleccionado ningún personaje");
   }
@@ -67,12 +74,114 @@ function ataqueBarrida() {
 }
 
 function ataqueAleatorioEnemigo() {
-  let ataques = ["Trompada", "Patada", "Barrida"];
-  ataqueEnemigo = ataques[aleatorio(1, ataques.length - 1)];
+  let ataqueAleatorio = aleatorio(1, 3);
+  if (ataqueAleatorio === 1) {
+    ataqueEnemigo = "Trompada";
+  } else if (ataqueAleatorio === 2) {
+    ataqueEnemigo = "Patada";
+  } else {
+    ataqueEnemigo = "Barrida";
+  }
+  combate();
+}
+
+function combate() {
+  if (ataqueEnemigo == ataqueJugador) {
+    crearMensaje("EMPATE");
+  } else if (
+    (ataqueJugador == "Trompada" && ataqueEnemigo == "Barrida") ||
+    (ataqueJugador == "Patada" && ataqueEnemigo == "Trompada") ||
+    (ataqueJugador == "Barrida" && ataqueEnemigo == "Patada")
+  ) {
+    vidaEnemigo--;
+    crearMensaje("GANASTE");
+  } else {
+    vidaJugador--;
+    crearMensaje("PERDISTE");
+  }
+  actualizarVidas();
+  verificarFinDelJuego();
+}
+
+function verificarFinDelJuego() {
+  if (vidaJugador <= 0) {
+    crearMensajeFinal("¡Has perdido la partida!");
+    deshabilitarBotonesAtaque();
+  } else if (vidaEnemigo <= 0) {
+    crearMensajeFinal("¡Has ganado la partida!");
+    deshabilitarBotonesAtaque();
+  }
+}
+
+function crearMensaje(resultado) {
+  let sectionMensajes = document.getElementById("mensaje");
+  let parrafo = document.createElement("p");
+  parrafo.innerHTML =
+    "Tu personaje ataco con " +
+    ataqueJugador +
+    ", el personaje del enemigo atacó con " +
+    ataqueEnemigo +
+    " " +
+    resultado +
+    "";
+  sectionMensajes.appendChild(parrafo);
+}
+
+function crearMensajeFinal(mensaje) {
+  let sectionMensajes = document.getElementById("mensaje");
+  let parrafo = document.createElement("p");
+  parrafo.innerHTML = `<b>${mensaje}</b>`;
+  sectionMensajes.appendChild(parrafo);
+}
+
+function deshabilitarBotonesAtaque() {
+  document.getElementById("boton-trompada").disabled = true;
+  document.getElementById("boton-patada").disabled = true;
+  document.getElementById("boton-barrida").disabled = true;
+}
+
+function habilitarBotonesAtaque() {
+  document.getElementById("boton-trompada").disabled = false;
+  document.getElementById("boton-patada").disabled = false;
+  document.getElementById("boton-barrida").disabled = false;
+}
+
+function actualizarVidas() {
+  document.getElementById("vida-jugador").innerText = vidaJugador;
+  document.getElementById("vida-enemigo").innerText = vidaEnemigo;
+}
+
+function limpiarMensajes() {
+  document.getElementById("mensaje").innerHTML = "";
 }
 
 function aleatorio(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+function reiniciarJuego() {
+  // Reinicia selección de personajes
+  let radios = document.querySelectorAll('input[name="personaje"]');
+  radios.forEach((radio) => (radio.checked = false));
+  document.getElementById("personaje-jugador").innerHTML = "";
+  document.getElementById("personaje-enemigo").innerHTML = "";
+
+  // Reinicia vidas
+  vidaJugador = 3;
+  vidaEnemigo = 3;
+  actualizarVidas();
+
+  // Limpia mensajes y habilita botones
+  limpiarMensajes();
+  habilitarBotonesAtaque();
+}
+
+// Agregar event listener al botón de reinicio
+window.addEventListener("load", function () {
+  let botonReiniciar = document.getElementById("boton-reiniciar");
+  if (botonReiniciar) {
+    botonReiniciar.addEventListener("click", reiniciarJuego);
+  }
+});
 
 window.addEventListener("load", iniciarJuego);
