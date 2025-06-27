@@ -50,6 +50,15 @@ def menu():
             print("| Opción inválida, vuelva a intentarlo.|")
             print("|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|")
 
+def pedir_flotante(mensaje):
+    while True:
+        try:
+            valor = float(input(mensaje))
+            if valor > 0:
+                return valor
+            print("El valor debe ser mayor que cero.")
+        except ValueError:
+            print("Entrada inválida. Ingrese un número válido.")
 
 def calcular_muros():
     print("|------------------------------------|")
@@ -233,23 +242,47 @@ def calcular_pisos():
     print("|------------------------------------|")
     print("|            PISOS                   |")
     print("|------------------------------------|")
-    espesor = 0.1  # 10 cm predeterminado
-    ancho = float(input("Ingrese el ancho del piso en metros: "))
-    largo = float(input("Ingrese el largo del piso en metros: "))
+    total_cemento = 0
+    total_arena = 0
+    total_piedra = 0
+    total_area = 0
+    respuesta = "s"
 
-    area_piso = largo * ancho
+    while respuesta.lower() == "s":
+        ancho = pedir_flotante("Ingrese el ancho del piso en metros: ")
+        largo = pedir_flotante("Ingrese el largo del piso en metros: ")
+        espesor_cm = pedir_flotante("Ingrese el espesor del piso en centímetros: ")
+        espesor = espesor_cm / 100
 
-    cantidad_cemento = 33 * area_piso
-    cantidad_arena = 0.09 * area_piso
-    cantidad_piedra = 0.072 * area_piso
+        volumen = largo * ancho * espesor
+        cemento = volumen * 300  # puede cambiarse según dosificación real
+        arena = volumen * 0.5
+        piedra = volumen * 0.5
 
-    print("|------------------------------------CALCULO DEL PISO-------------------------------------|")
-    print(
-        f"| Para construir el piso de {espesor * 100:.2f} cm de espesor necesitarás:")
-    print(f"| * Cemento: {cantidad_cemento:.2f} kg")
-    print(f"| * Arena: {cantidad_arena:.3f} m³")
-    print(f"| * Piedra: {cantidad_piedra:.3f} m³")
-    print("|-----------------------------------------------------------------------------------------|")
+        print("|-------------------CALCULO DEL PISO-------------------|")
+        print(f"| Piso de {largo:.2f} x {ancho:.2f} m y {espesor_cm:.1f} cm de espesor:")
+        print(f"| * Cemento: {cemento:.2f} kg")
+        print(f"| * Arena: {arena:.3f} m³")
+        print(f"| * Piedra: {piedra:.3f} m³")
+        print("|------------------------------------------------------|")
+
+        total_cemento += cemento
+        total_arena += arena
+        total_piedra += piedra
+        total_area += largo * ancho
+
+        while True:
+            respuesta = input("¿Desea calcular otro piso? (s/n): ").lower()
+            if respuesta in ("s", "n"):
+                break
+            print("Opción inválida. Por favor, vuelva a intentarlo.")
+
+    print("|-------------------RESUMEN TOTAL DE PISOS-------------------|")
+    print(f"| Área total: {total_area:.2f} m²")
+    print(f"| Cemento total: {total_cemento:.2f} kg")
+    print(f"| Arena total: {total_arena:.3f} m³")
+    print(f"| Piedra total: {total_piedra:.3f} m³")
+    print("|------------------------------------------------------------|")
 
 
 def calcular_pintura():
