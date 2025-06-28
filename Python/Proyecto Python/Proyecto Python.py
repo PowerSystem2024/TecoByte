@@ -242,22 +242,22 @@ def calcular_pisos():
     print("|------------------------------------|")
     print("|            PISOS                   |")
     print("|------------------------------------|")
-    total_cemento = 0
-    total_arena = 0
-    total_piedra = 0
-    total_area = 0
+    total_cemento = 0   # Contador para que al final nos diga cuánto material en total necesitamos
+    total_arena = 0     # Contador para que al final nos diga cuánto material en total necesitamos
+    total_piedra = 0    # Contador para que al final nos diga cuánto material en total necesitamos
+    total_area = 0      # Contador para que al final nos diga cuánto material en total necesitamos
     respuesta = "s"
 
     while respuesta.lower() == "s":
-        ancho = pedir_flotante("Ingrese el ancho del piso en metros: ")
-        largo = pedir_flotante("Ingrese el largo del piso en metros: ")
-        espesor_cm = pedir_flotante("Ingrese el espesor del piso en centímetros: ")
-        espesor = espesor_cm / 100
+        ancho = pedir_flotante("Ingrese el ancho del piso en metros:\n")   # Se creó una función en la línea 53, donde se le pide al usuario que ingrese un número mayor que 0
+        largo = pedir_flotante("Ingrese el largo del piso en metros:\n")   # Se creó una función en la línea 53, donde se le pide al usuario que ingrese un número mayor que 0
+        espesor_cm = pedir_flotante("Ingrese el espesor del piso en centímetros:\n")   # Se creó una función en la línea 53, donde se le pide al usuario que ingrese un número mayor que 0
+        espesor = espesor_cm / 100   # Se transforma el número que colocó el usuario de cm a metros, para poder hacer los cálculos.
 
         volumen = largo * ancho * espesor
-        cemento = volumen * 300  # puede cambiarse según dosificación real
-        arena = volumen * 0.5
-        piedra = volumen * 0.5
+        cemento = volumen * 320  # Dosificación recomendada
+        arena = volumen * 0.45   # Dosificación recomendada
+        piedra = volumen * 0.9   # Dosificación recomendada
 
         print("|-------------------CALCULO DEL PISO-------------------|")
         print(f"| Piso de {largo:.2f} x {ancho:.2f} m y {espesor_cm:.1f} cm de espesor:")
@@ -272,7 +272,7 @@ def calcular_pisos():
         total_area += largo * ancho
 
         while True:
-            respuesta = input("¿Desea calcular otro piso? (s/n): ").lower()
+            respuesta = input("¿Desea calcular otro piso? (s/n):\n").lower()
             if respuesta in ("s", "n"):
                 break
             print("Opción inválida. Por favor, vuelva a intentarlo.")
