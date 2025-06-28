@@ -260,28 +260,28 @@ def calcular_pisos():
         piedra = volumen * 0.9   # Dosificación recomendada
 
         print("|-------------------CALCULO DEL PISO-------------------|")
-        print(f"| Piso de {largo:.2f} x {ancho:.2f} m y {espesor_cm:.1f} cm de espesor:")
-        print(f"| * Cemento: {cemento:.2f} kg")
-        print(f"| * Arena: {arena:.3f} m³")
-        print(f"| * Piedra: {piedra:.3f} m³")
+        print(f"| Piso de {largo:.2f} x {ancho:.2f} m y {espesor_cm:.1f} cm de espesor:")   # Nos va a imprimir las medidas del piso que ingresó el usuario
+        print(f"| * Cemento: {cemento:.2f} kg")   # Nos va a dar la cantidad de cemento que se necesita
+        print(f"| * Arena: {arena:.3f} m³")       # Nos va a decir la cantidad de arena necesaria
+        print(f"| * Piedra: {piedra:.3f} m³")     # Nos va a decir la cantidad de piedra que necesita el usuario
         print("|------------------------------------------------------|")
 
-        total_cemento += cemento
-        total_arena += arena
-        total_piedra += piedra
-        total_area += largo * ancho
+        total_cemento += cemento   # Se va a guardar en la variable total_cemento la cantidad que nos dio cemento y se va a ir sumando a medida que el usuario agregue más cálculos.
+        total_arena += arena       # Se va a guardar en la variable total_arena la cantidad que nos dio arena y se va a ir sumando a medida que el usuario agregue más cálculos.
+        total_piedra += piedra     # Se va a guardar en la variable total_piedra la cantidad que nos dio piedra y se va a ir sumando a medida que el usuario agregue más cálculos.
+        total_area += largo * ancho  # Se va a guardar en la variable total_area el largo y ancho que colocó el usuario y se va a ir sumando a medida que haga más cálculos.
 
         while True:
-            respuesta = input("¿Desea calcular otro piso? (s/n):\n").lower()
-            if respuesta in ("s", "n"):
+            respuesta = input("¿Desea calcular otro piso? (s/n):\n").lower()   # Le va a preguntar al usuario si quiere hacer otro cálculo de piso
+            if respuesta in ("s", "n"):   # La respuesta tiene que ser 's' o 'n'
                 break
-            print("Opción inválida. Por favor, vuelva a intentarlo.")
+            print("Opción inválida. Por favor, vuelva a intentarlo.")   # Sino nos dice que es inválida.
 
     print("|-------------------RESUMEN TOTAL DE PISOS-------------------|")
-    print(f"| Área total: {total_area:.2f} m²")
-    print(f"| Cemento total: {total_cemento:.2f} kg")
-    print(f"| Arena total: {total_arena:.3f} m³")
-    print(f"| Piedra total: {total_piedra:.3f} m³")
+    print(f"| Área total: {total_area:.2f} m²")   # Nos va a decir el área total que se calculó de 1 o más pisos.
+    print(f"| Cemento total: {total_cemento:.2f} kg")   #  Nos va a decir el cemento total que se calculó de 1 o más pisos.
+    print(f"| Arena total: {total_arena:.3f} m³")   # Nos va a decir la arena total que se calculó de 1 o más pisos.
+    print(f"| Piedra total: {total_piedra:.3f} m³")   #  Nos va a decir la piedra total que se calculó de 1 o más pisos.
     print("|------------------------------------------------------------|")
 
 
