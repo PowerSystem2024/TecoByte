@@ -1,3 +1,99 @@
+""# Acumuladores globales
+import sqlite3
+from datetime import datetime
+
+# Base de datos
+DB_PATH = "materiales.db"
+
+# Crea la base si no existe
+conn = sqlite3.connect(DB_PATH)
+c = conn.cursor()
+c.execute('''CREATE TABLE IF NOT EXISTS proyectos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT NOT NULL,
+    fecha_creacion TEXT NOT NULL
+)''')
+c.execute('''CREATE TABLE IF NOT EXISTS materiales_calculados (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    proyecto_id INTEGER,
+    tipo TEXT NOT NULL,
+    descripcion TEXT,
+    cemento REAL,
+    arena REAL,
+    piedra REAL,
+    ladrillos INTEGER,
+    hierro4 REAL,
+    hierro6 REAL,
+    hierro8 REAL,
+    hierro10 REAL,
+    pintura REAL,
+    iluminacion REAL,
+    fecha TEXT NOT NULL,
+    FOREIGN KEY (proyecto_id) REFERENCES proyectos(id)
+)''')
+conn.commit()
+
+c.execute("SELECT id FROM proyectos WHERE nombre = ?", ("Proyecto Base",))
+row = c.fetchone()
+if row is None:
+    c.execute("INSERT INTO proyectos (nombre, fecha_creacion) VALUES (?, ?)", ("Proyecto Base", datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+    conn.commit()
+    proyecto_id = c.lastrowid
+else:
+    proyecto_id = row[0]
+conn.close()
+
+def guardar_materiales(tipo, descripcion, cemento=0, arena=0, piedra=0, ladrillos=0,
+                      hierro4=0, hierro6=0, hierro8=0, hierro10=0,
+                      pintura=0, iluminacion=0):
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute('''INSERT INTO materiales_calculados (
+        proyecto_id, tipo, descripcion, cemento, arena, piedra,
+        ladrillos, hierro4, hierro6, hierro8, hierro10, pintura,
+        iluminacion, fecha
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (
+        proyecto_id, tipo, descripcion, cemento, arena, piedra, ladrillos,
+        hierro4, hierro6, hierro8, hierro10, pintura, iluminacion,
+        datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    ))
+    conn.commit()
+    conn.close()
+
+def mostrar_materiales_guardados():
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+
+    print("|================= MATERIALES GUARDADOS =================|")
+    c.execute('''SELECT tipo, descripcion, cemento, arena, piedra, ladrillos,
+                        hierro4, hierro6, hierro8, hierro10, pintura, iluminacion, fecha
+                        FROM materiales_calculados
+                        WHERE proyecto_id = ?''', (proyecto_id,))
+    
+    rows = c.fetchall()
+    if not rows:
+        print("| No se encontraron materiales guardados para este proyecto.")
+    else:
+        for i, row in enumerate(rows, start=1):
+            print(f"\n# Cálculo {i}:")
+            print(f"  - Tipo: {row[0]}")
+            print(f"  - Descripción: {row[1]}")
+            print(f"  - Cemento: {row[2]:.2f} kg")
+            print(f"  - Arena: {row[3]:.3f} m³")
+            print(f"  - Piedra: {row[4]:.3f} m³")
+            print(f"  - Ladrillos: {row[5]}")
+            print(f"  - Hierro del 4: {row[6]} m")
+            print(f"  - Hierro del 6: {row[7]} m")
+            print(f"  - Hierro del 8: {row[8]} m")
+            print(f"  - Hierro del 10: {row[9]} m")
+            print(f"  - Pintura: {row[10]} litros")
+            print(f"  - Iluminación: {row[11]} lúmenes")
+            print(f"  - Fecha: {row[12]}")
+    
+    conn.close()
+    print("|========================================================|")
+
+
 def main():
     print("|------------------------------------|")
     print("|    CALCULADORA DE MATERIALES       |")
@@ -83,27 +179,27 @@ def calcular_muros():
             print("Espesor incorrecto. Por favor, vuelva a ingresar el espesor:")
 
         if espesor_muro == 20:
-            ladrillos_final = int(60 * superficie_muro)
-            cemento_final = 10.9 * superficie_muro
-            arena_final = 0.09 * superficie_muro
+            ladrillos = int(60 * superficie_muro)
+            cemento = 10.9 * superficie_muro
+            arena = 0.09 * superficie_muro
         else:
-            ladrillos_final = int(70 * superficie_muro)
-            cemento_final = 15.2 * superficie_muro
-            arena_final = 0.115 * superficie_muro
+            ladrillos = int(70 * superficie_muro)
+            cemento = 15.2 * superficie_muro
+            arena = 0.115 * superficie_muro
 
         print("|------------------------------------CALCULO DEL MURO-------------------------------------|")
         print(f"| La superficie total del muro es: {superficie_muro:.2f} m²")
         print("| Para su construcción necesitará: ")
-        print(f"| * Cemento: {cemento_final:.2f} kg")
-        print(f"| * Ladrillos: {ladrillos_final}")
+        print(f"| * Cemento: {cemento:.2f} kg")
+        print(f"| * Ladrillos: {ladrillos}")
         print(f"| * Espesor muro: {espesor_muro} cm")
-        print(f"| * Arena: {arena_final:.3f} m³")
+        print(f"| * Arena: {arena:.3f} m³")
         print("|-----------------------------------------------------------------------------------------|")
 
         superficie_muro_total += superficie_muro
-        ladrillos_total += ladrillos_final
-        cemento_total += cemento_final
-        arena_total += arena_final
+        ladrillos_total += ladrillos
+        cemento_total += cemento
+        arena_total += arena
 
         while True:
             respuesta = input("¿Desea calcular otro muro? (s/n): ").lower()
@@ -119,6 +215,9 @@ def calcular_muros():
     print(f"| * Ladrillos: {ladrillos_total}")
     print(f"| * Arena: {arena_total:.3f} m³")
     print("|--------------------------------------------------------------------------------------|")
+    
+    guardar_materiales("Muro", f"La superficie total del muro es: {superficie_muro:.2f} m²",
+                      cemento, ladrillos, arena)
 
 
 def calcular_viga():
@@ -136,18 +235,18 @@ def calcular_viga():
         cemento = largo * 9
         arena = largo * 0.02
         piedra = largo * 0.02
-        hierro = largo * 4
+        hierro4 = largo * 4
 
         print(f"Materiales necesarios para una viga de {largo} metros:")
         print(f"* Cemento (kg): {cemento:.2f}")
         print(f"* Arena (m3): {arena:.3f}")
         print(f"* Piedra (m3): {piedra:.3f}")
-        print(f"* Hierro del 4 (metros): {hierro:.2f}")
+        print(f"* Hierro del 4 (metros): {hierro4:.2f}")
 
         total_cemento += cemento
         total_arena += arena
         total_piedra += piedra
-        total_hierro += hierro
+        total_hierro += hierro4
 
         while True:
             respuesta = input(
@@ -163,6 +262,8 @@ def calcular_viga():
     print(f"| * Hierro del 4 (metros): {total_hierro:.2f}")
     print("|-------------------------------------------------------------------------------------------|")
 
+    guardar_materiales("Viga", f"Materiales necesarios para una viga de {largo} metros",
+                  cemento, arena, piedra, hierro4)
 
 def calcular_columna():
     print("|------------------------------------|")
@@ -189,54 +290,63 @@ def calcular_columna():
     print(f"| * Hierro del 4: {hierro4:.2f} m")
     print("|-----------------------------------------------------------------------------------------------|")
 
+    guardar_materiales("Columna", f"Para {cantidad_columna:.2f} columna/s de {largo_columna:.2f} metros de largo y {ancho_columna:.2f}",
+                  cemento, arena, piedra, hierro4, hierro10)
 
 def calcular_contrapisos():
     print("|------------------------------------|")
     print("|         CONTRAPISOS                |")
     print("|------------------------------------|")
-    espesor = float(
+    espesor_cm = float(
         input("Ingrese el espesor del contrapiso en centímetros: ")) * 0.01
     ancho = float(input("Ingrese el ancho del contrapiso en metros: "))
     largo = float(input("Ingrese el largo del contrapiso en metros: "))
+    espesor = espesor_cm / 100
+    volumen = espesor * ancho * largo
 
-    volumen_cemento = espesor * ancho * largo * 105
-    volumen_arena = espesor * ancho * largo * 0.45
-    volumen_piedra = espesor * ancho * largo * 0.9
+    cemento = volumen * 105
+    arena = volumen * 0.45
+    piedra = volumen * 0.9
 
     print("|------------------------------------CALCULO DE CONTRAPISO-------------------------------------|")
     print(
-        f"| Para un contrapiso de {espesor:.2f} metros de espesor, {ancho:.2f} metros de ancho y {largo:.2f} metros de largo se necesitan:")
-    print(f"| * Cemento: {volumen_cemento:.2f} kg")
-    print(f"| * Arena: {volumen_arena:.3f} m³")
-    print(f"| * Piedra: {volumen_piedra:.3f} m³")
+        f"| Para un contrapiso de {espesor:.2f} centimetros de espesor, {ancho:.2f} metros de ancho y {largo:.2f} metros de largo se necesitan:")
+    print(f"| * Cemento: {cemento:.2f} kg")
+    print(f"| * Arena: {arena:.3f} m³")
+    print(f"| * Piedra: {piedra:.3f} m³")
     print("|----------------------------------------------------------------------------------------------|")
 
+    guardar_materiales("Contrapiso", f"Para un contrapiso de {espesor:.2f} centimetros de espesor, {ancho:.2f} metros de ancho y {largo:.2f} metros de largo",
+                  cemento, arena, piedra)
 
 def calcular_techo():
     print("|------------------------------------|")
     print("|            TECHO                   |")
     print("|------------------------------------|")
-    espesor = float(input("Ingrese el espesor del techo en metros: "))
+    espesor_cm = float(input("Ingrese el espesor del techo en centímetros: "))
     ancho = float(input("Ingrese el ancho del techo en metros: "))
     largo = float(input("Ingrese el largo del techo en metros: "))
+    espesor = espesor_cm / 100
 
-    area_techo = largo * ancho
+    area_techo = largo * ancho * espesor
 
-    cantidad_cemento = 33 * area_techo
-    cantidad_arena = 0.072 * area_techo
-    cantidad_piedra = 0.072 * area_techo
-    cantidad_hierro8 = 7 * area_techo
-    cantidad_hierro6 = 4 * area_techo
+    cemento = 33 * area_techo
+    arena = 0.072 * area_techo
+    piedra = 0.072 * area_techo
+    hierro8 = 7 * area_techo
+    hierro6 = 4 * area_techo
 
     print("|------------------------------------CALCULO DEL TECHO-------------------------------------|")
     print("| Para construir el techo necesitarás:")
-    print(f"| * Cemento: {cantidad_cemento:.2f} kg")
-    print(f"| * Arena: {cantidad_arena:.3f} m³")
-    print(f"| * Piedra: {cantidad_piedra:.3f} m³")
-    print(f"| * Hierro del 8: {cantidad_hierro8:.2f} m")
-    print(f"| * Hierro del 6: {cantidad_hierro6:.2f} m")
+    print(f"| * Cemento: {cemento:.2f} kg")
+    print(f"| * Arena: {arena:.3f} m³")
+    print(f"| * Piedra: {piedra:.3f} m³")
+    print(f"| * Hierro del 8: {hierro8:.2f} m")
+    print(f"| * Hierro del 6: {hierro6:.2f} m")
     print("|------------------------------------------------------------------------------------------|")
 
+    guardar_materiales("Techo", f"Para un techo de {espesor:.2f} centimetros de espesor, {ancho:.2f} metros de ancho y {largo:.2f} metros de largo",
+                  cemento, arena, piedra, hierro6, hierro8)
 
 def calcular_pisos():
     print("|------------------------------------|")
@@ -284,6 +394,8 @@ def calcular_pisos():
     print(f"| Piedra total: {total_piedra:.3f} m³")   #  Nos va a decir la piedra total que se calculó de 1 o más pisos.
     print("|------------------------------------------------------------|")
 
+    guardar_materiales("Pisos", f"Piso de {largo}x{ancho}m, {espesor_cm}cm",
+                  cemento, arena, piedra)
 
 def calcular_pintura():
     print("|------------------------------------|")
@@ -293,13 +405,15 @@ def calcular_pintura():
     largo_pared = float(input("Ingrese el largo de la pared en metros: "))
 
     area_pared = altura_pared * largo_pared
-    litros_pintura = area_pared * 0.1
+    pintura = area_pared * 0.1
 
     print("|------------------------------------CALCULO DE PINTURA-----------------------------------|")
     print(f"| Para pintar una pared de {area_pared:.2f} m² necesitarás:")
-    print(f"| * Pintura: {litros_pintura:.2f} litros")
+    print(f"| * Pintura: {pintura:.2f} litros")
     print("|-----------------------------------------------------------------------------------------|")
 
+    guardar_materiales("Pintura", f"Para pintar una pared de {area_pared:.2f} m²",
+                  pintura)
 
 def calcular_iluminacion():
     print("|------------------------------------|")
@@ -316,8 +430,12 @@ def calcular_iluminacion():
     print(f"| * Iluminación: {iluminacion:.2f} lúmenes")
     print("|-----------------------------------------------------------------------------------------|")
 
+    guardar_materiales("Iluminación", f"Para iluminar un área de {area:.2f} m²",
+                  iluminacion)
 
 def salir():
+    print("\n|======== RESUMEN FINAL GUARDADO EN LA BASE =========|")
+    mostrar_materiales_guardados()   # Al finalizar el programa, nos muestra el historial de materiales que necesitamos o solicitamos para cada opción
     print("|====================|")
     print("| PROGRAMA TERMINADO.|")
     print("|====================|")
